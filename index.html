@@ -100,7 +100,7 @@
                     Neptune's Eatery uses only the highest quality, freshest, ingredients to serve your family.
                 </p>
                 <p class="fs-3 mx-2">Fast service, friendly faces, and freakin awesome eats!</p>
-                <button onclick="fireVisitCustomEvent()" class="btn btn-lg action-button my-4 w-50 mx-auto">Order Now</button>
+                <button onclick="fireVisitCustomEvent()" class="btn btn-lg action-button my-4 w-50 mx-auto">View Menu</button>
             </div>
 		</div>
         <div class="container-fluid w-100 d-flex justify-content-around mt-2">
@@ -166,7 +166,7 @@
         <script>
             async function fireVisitCustomEvent(){
                 const sdk = await UA
-                const event = new sdk.CustomEvent("clicked_order_now_restaurant")
+                const event = new sdk.CustomEvent("clicked_view_menu_restaurant")
                 event.track()
             }
         </script>
